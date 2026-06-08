@@ -1,0 +1,30 @@
+.btnA {
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+.btn-E70106 {
+  background-color: $color-E70106;
+  color: $color-ffffff;
+  border: 1px solid transparent;
+  &:hover {
+    transition: all 1s ease;
+    background-color: transparent;
+    color: $color-ffffff;
+    border: 1px solid $color-ffffff;
+  }
+}
+.btn-0B0C10 {
+  background-color: $color-0B0C10;
+  color: $color-ffffff;
+    border: 1px solid transparent;
+  &:hover {
+    transition: all 1s ease;
+    background-color: transparent;
+    color: $color-ffffff;
+    border: 1px solid $color-ffffff;
+  }
+}

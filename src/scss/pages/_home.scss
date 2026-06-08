@@ -1,0 +1,72 @@
+.hero-section {
+  .bg-layer {
+    background-color: black;
+    opacity: 20%;
+  }
+}
+.stats-section {
+  margin-top: -100px;
+  z-index: 1;
+  position: relative;
+  .stat-item {
+    .icon img {
+      height: 64px;
+      width: 64px;
+    }
+  }
+  .stat-blocks {
+    background-color: #4d5b6be6;
+    border-radius: 10px;
+  }
+}
+
+.about-us-section {
+  .left-right-img {
+    height: 569px;
+    border-radius: 10px;
+  }
+}
+.our-service-section {
+  .service-card {
+    border-radius: 10px;
+    .service-img img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
+.pricing-card-section {
+  .price-card {
+    background: #0d0d0d;
+    border-radius: 12px;
+    padding: 40px 30px;
+    border: 1px solid #222;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s;
+    &:hover {
+      transform: translateY(-8px);
+    }
+
+    .check-mark {
+      width: 18px;
+    }
+  }
+}
+.testimonial-section {
+  .testimonial-card {
+    // width: 320px;
+    // background: #0d0d0d;
+    // border: 2px solid #202020;
+    // border-radius: 15px;
+    // padding: 25px;
+
+  }
+  .testimonial-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+  }
+}

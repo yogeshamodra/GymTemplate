@@ -1,0 +1,174 @@
+//background color
+.bg-E70106 {
+  background-color: $color-E70106;
+}
+.bg-0B0C10 {
+  background-color: $color-0B0C10;
+}
+.bg-1F2833 {
+  background-color: $color-1F2833;
+}
+.bg-45a29e {
+  background-color: $color-45a29e;
+}
+.bg-c5c6c7 {
+  background-color: $color-c5c6c7;
+}
+.bg-E1FB02 {
+  background-color: $color-E1FB02;
+}
+.bg-ffffff {
+  background-color: $color-ffffff;
+}
+//text-color
+.text-E70106 {
+  color: $color-E70106;
+}
+.text-0B0C10 {
+  color: $color-0B0C10;
+}
+.text-1F2833 {
+  color: $color-1F2833;
+}
+.text-45a29e {
+  color: $color-45a29e;
+}
+.text-c5c6c7 {
+  color: $color-c5c6c7;
+}
+.text-E1FB02 {
+  color: $color-E1FB02;
+}
+.text-ffffff {
+  color: $color-ffffff;
+}
+
+// font size
+
+.font12 {
+  font-size: $font12;
+}
+
+.font14 {
+  font-size: $font14;
+}
+
+.font16 {
+  font-size: $font16;
+}
+
+.font18 {
+  font-size: $font18;
+}
+.font20 {
+  font-size: $font20;
+}
+
+.font24 {
+  font-size: $font24;
+}
+.font28 {
+  font-size: $font28;
+}
+.font32 {
+  font-size: $font32;
+}
+.font40 {
+  font-size: $font40;
+}
+
+.font48 {
+  font-size: $font48; 
+}
+.font52 {
+  font-size: $font52; 
+}
+.font70 {
+  font-size: $font70; 
+}
+
+// res font size
+@media (max-width:992px) {
+  
+  .res-font52 {
+    font-size: $font52; 
+  }
+  
+}
+
+
+
+// ==========================================
+// 1. Line Height (Leading) Classes
+// ==========================================
+
+.leading12 {
+  line-height: $leading12;
+}
+.leading16 {
+  line-height: $leading16;
+}
+.leading20 {
+  line-height: $leading20;
+}
+.leading24 {
+  line-height: $leading24;
+} 
+.leading28 {
+  line-height: $leading28;
+}
+.leading32 {
+  line-height: $leading32;
+}
+.leading40 {
+  line-height: $leading40;
+}
+.leading56 {
+  line-height: $leading56;
+} 
+.leading75 {
+  line-height: $leading75;
+} 
+
+// res line height
+@media (max-width:992px) {
+  
+  .res-leading56 {
+    line-height: $leading56;
+  } 
+  
+}
+
+
+// ==========================================
+// 2. Letter Spacing (Tracking) Classes
+// ==========================================
+
+.tracking-tight {
+  letter-spacing: $tracking-tight;
+}
+.tracking-normal {
+  letter-spacing: $tracking-normal;
+}
+.tracking-wide {
+  letter-spacing: $tracking-wide;
+} 
+.tracking-wider {
+  letter-spacing: $tracking-wider;
+} 
+.tracking-widest {
+  letter-spacing: $tracking-widest;
+} 
+
+//  set desktop margin top
+@for $i from 1 through 70 {
+  .dmt-#{($i * 5)} {
+    margin-top: #{$i * 5}px;
+  }
+}
+//  set desktop margin bottom
+@for $i from 1 through 70 {
+  .dmb-#{($i * 5)} {
+    margin-bottom: #{$i * 5}px;
+  }
+}

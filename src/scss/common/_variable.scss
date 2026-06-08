@@ -1,0 +1,51 @@
+
+//common color for background and text
+// ૧. પ્રાથમિક કલર (યુઝરનું ધ્યાન ખેંચવા અને બટન્સ માટે)
+$color-E70106: #E70106; 
+$color-E1FB02: #E1FB02; 
+
+// ૨. બેકગ્રાઉન્ડ કલર્સ (ડાર્ક થીમ માટે)
+$color-0B0C10: #0B0C10; 
+$color-1F2833: #1F2833; 
+
+// ૩. ટેક્સ્ટ કલર્સ
+$color-ffffff: #ffffff; 
+$color-c5c6c7: #c5c6c7; 
+
+// ૪. સક્સેસ અને બોર્ડર કલર્સ
+$color-45a29e: #45a29e; 
+
+// --- Font Size Variables ---
+
+$font12: 12px; 
+$font14: 14px; 
+$font16: 16px; 
+$font18: 18px; 
+$font20: 20px; 
+$font24: 24px; 
+$font28: 28px; 
+$font32: 32px; 
+$font40: 40px; 
+$font48: 48px; 
+$font52: 52px; 
+$font70: 70px; 
+
+// --- Line Height (Leading) ---
+
+$leading12: 12px; 
+$leading16: 16px; 
+$leading20: 20px; 
+$leading24: 24px; 
+$leading28: 28px; 
+$leading32: 32px; 
+$leading40: 40px; 
+$leading56: 56px; 
+$leading75: 75px; 
+
+// --- Letter Spacing (Tracking) ---
+
+$tracking-tight: -0.5px; 
+$tracking-normal: 0px;    
+$tracking-wide:   1px;    
+$tracking-wider:  2px;    
+$tracking-widest: 4px;    

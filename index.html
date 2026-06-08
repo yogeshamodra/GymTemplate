@@ -1,11 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymTemplate</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body>
-    
+
+<body class="bg-0B0C10">
+    <header class="header position-fixed top-0 w-100 bg-1F2833">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-6 col-lg-2 col-xl-3">
+                    <div class="header-logo">
+                        <img src="assets/images/header-logo-1.png" alt="header-logo" class="w-100 h-100 object-cover">
+                    </div>
+                </div>
+                <div class="col-6 menu-toggle d-lg-none d-flex justify-content-end">
+                    <svg class="burgar-menu">
+                        <line x1="0" y1="50%" x2="100%" y2="50%" class="top" shape-rendering="crispEdges" />
+                        <line x1="0" y1="50%" x2="100%" y2="50%" class="middle" shape-rendering="crispEdges" />
+                        <line x1="0" y1="50%" x2="100%" y2="50%" class="bottom" shape-rendering="crispEdges" />
+                    </svg>
+                </div>
+                <div class="nav-menu col-12 col-lg-7 col-xl-6 ">
+
+                    <nav class="pt-5 pt-lg-0">
+                        <ul
+                            class="main-menu list-unstyled mb-0 d-flex flex-lg-row flex-column align-items-lg-center justify-content-between">
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Home</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">About</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Service</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Trainer</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Pricing</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Gallery</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Contact</a>
+                            </li>
+                            <li class="menu-item mb-5 mb-lg-0">
+                                <a href="" class="roboto font16 leading16 text-ffffff text-decoration-none">Join Now</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section class="hero-section position-relative h-vh">
+        <div class="bg-layer w-100 h-100 position-absolute top-0"></div>
+        <div class="hero-img h-100">
+            <img src="assets/images/hero-img.jpg" alt="hero-img" class="w-100 h-100 object-cover">
+        </div>
+        <div class="container">
+            <div class="position-absolute top-left-center">
+                <div class="col-lg-6">
+                    <div class="nunito font70 res-font52 res-leading56 leading75 text-ffffff dmb-10">
+                        TRANSFORM YOUR BODY <span class="text-E70106">TRANSFORM YOUR LIFE</span>
+                    </div>
+                    <div class="roboto font18 leading28 text-ffffff dmb-25">
+                        Join FitZone and start your journey towards a stronger, healthier and better you.
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <div>
+                            <a href=""
+                                class="btnA btn-E70106 text-decoration-none  roboto font16 leading20 text-ffffff">Book
+                                Free Trial</a>
+                        </div>
+                        <div>
+                            <a href=""
+                                class="btnA btn-0B0C10 text-decoration-none  roboto font16 leading20 text-ffffff">Register
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stats-section">
+        <div class="container">
+            <div class="stat-blocks row text-center py-4 g-4">
+                <div class="col-lg-6 col-md-3">
+                    <div class="stat-item ">
+                        <div class="icon">
+                            <img src="assets/images/member.svg" alt="member-svg">
+                        </div>
+                        <div>
+                            <div class="roboto font20 leading32 text-ffffff ">500+</div>
+                            <div class="font20 leading32 text-ffffff text-uppercase">HAPPY MEMBERS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <div class="stat-item ">
+                        <div class="icon">
+                            <img src="assets/images/gym-trainer.svg" alt="member-svg">
+                        </div>
+                        <div>
+                            <div class="roboto font20 leading32 text-ffffff ">15+</div>
+                            <div class="font20 leading32 text-ffffff text-uppercase">Expert Trainers</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <div class="stat-item ">
+                        <div class="icon dmb-5">
+                            <img src="assets/images/star.svg" alt="star-svg">
+                        </div>
+                        <div>
+                            <div class="roboto font20 leading32 text-ffffff ">95+</div>
+                            <div class="font20 leading32 text-ffffff text-uppercase">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-3">
+                    <div class="stat-item ">
+                        <div class="icon dmb-5">
+                            <img src="assets/images/member.svg" alt="member-svg">
+                        </div>
+                        <div>
+                            <div class="roboto font20 leading32 text-ffffff ">500+</div>
+                            <div class="font20 leading32 text-ffffff">HAPPY MEMBERS</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us-section dmt-100">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="left-right-img overflow-hidden">
+                        <img src="assets/images/left-right-img.jpg" alt="left-right-img"
+                            class="w-100 h-100 object-cover">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">
+                        about us
+                    </div>
+                    <div class="nunito font52 leading56 text-ffffff text-uppercase dmb-20">
+                        YOUR FITNESS IS OUR MISSION
+                    </div>
+                    <div class="roboto font20 leading24 text-ffffff dmb-20">
+                        At FitZone, we believe fitness is not just about working out, it's about building a lifestyle.
+                        Our certified trainers, modern equipment and personalized programs help you achieve results that
+                        last a lifetime.
+                    </div>
+                    <div class="roboto font20 leading24 text-ffffff dmb-20">
+                        At FitZone, we believe fitness is not just about working out, it's about building a lifestyle.
+                        Our certified trainers, modern equipment and personalized programs help you achieve results that
+                        last a lifetime.
+                    </div>
+                    <div>
+                        <a href="" class="btnA btn-E70106 text-decoration-none roboto font16 leading20 text-ffffff">Know
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="our-service-section dmt-100">
+        <div class="container">
+            <div class="col-lg-9 mx-auto text-center ">
+                <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">
+                    Our Services
+                </div>
+                <div class="nunito font48 leading56 text-ffffff dmb-20 fw-bold">
+                    We Offer The Best
+                </div>
+            </div>
+            <div class="row row10">
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0">
+                    <div class="service-card h-100 overflow-hidden bg-1F2833 p-4">
+                        <div class="service-img dmb-15">
+                            <img src="assets/images/weight-loss.svg" alt="">
+                        </div>
+                        <div class="nunito font24 leading28 text-ffffff dmb-15">
+                            Wait Loss
+                        </div>
+                        <div class="roboto font16 leading24 text-c5c6c7">
+                            Burn fat and lose weight with our customized workout plans.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0">
+                    <div class="service-card h-100 overflow-hidden bg-1F2833 p-4">
+                        <div class="service-img dmb-15">
+                            <img src="assets/images/muscle-arm.svg" alt="">
+                        </div>
+                        <div class="nunito font24 leading28 text-ffffff dmb-15">
+                            MUSCLE BUILDING
+                        </div>
+                        <div class="roboto font16 leading24 text-c5c6c7">
+                            Build strength and muscle with advanced training techniques.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0">
+                    <div class="service-card h-100 overflow-hidden bg-1F2833 p-4">
+                        <div class="service-img dmb-15">
+                            <img src="assets/images/dumbbell.svg" alt="">
+                        </div>
+                        <div class="nunito font24 leading28 text-ffffff dmb-15">
+                            PERSONAL TRAINING
+                        </div>
+                        <div class="roboto font16 leading24 text-c5c6c7">
+                            Get 1-on-1 training designed specifically for your goals.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center mb-5 mb-lg-0">
+                    <div class="service-card h-100 overflow-hidden bg-1F2833 p-4">
+                        <div class="service-img dmb-15">
+                            <img src="assets/images/proteins-nutrition.svg" alt="">
+                        </div>
+                        <div class="nunito font24 leading28 text-ffffff dmb-15">
+                            NUTRITION GUIDANCE
+                        </div>
+                        <div class="roboto font16 leading24 text-c5c6c7">
+                            Personalized diet plans to fuel your workouts and results.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="pricing-card-section dmt-100">
+        <div class="container">
+            <div class="col-lg-7 mx-auto text-center mb-5">
+                <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">PRICING PLANS</div>
+                <div class="nunito font48 leading56 text-ffffff dmb-20 fw-bold">CHOOSE YOUR PLAN</div>
+            </div>
+
+            <div class="row row10">
+
+                <!-- Basic Plan -->
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="price-card">
+                        <div class="roboto font20 leading24 text-c5c6c7 text-uppercase dmb-15">BASIC PLAN</div>
+
+                        <div class="price nunito font32 leading40 text-ffffff dmb-15">
+                            ₹1,499 <span class="text-c5c6c7">/ month</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Gym Access
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Basic Equipment
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Locker Room
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href=""
+                                class="btnA btn-E70106 plan-btn roboto font16 leading20 text-ffffff text-decoration-none">
+                                CHOOSE PLAN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="price-card">
+                        <div class="roboto font20 leading24 text-c5c6c7 text-uppercase dmb-15">PREMIUM PLAN</div>
+
+                        <div class="price nunito font32 leading40 text-ffffff dmb-15">
+                            ₹2,499 <span class="text-c5c6c7">/ month</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Gym Access
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    All Equipment
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Personal Training
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Diet Plan
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href=""
+                                class="btnA btn-E70106 plan-btn roboto font16 leading20 text-ffffff text-decoration-none">
+                                CHOOSE PLAN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+                    <div class="price-card">
+                        <div class="roboto font20 leading24 text-c5c6c7 text-uppercase dmb-15">BASIC PLAN</div>
+
+                        <div class="price nunito font32 leading40 text-ffffff dmb-15">
+                            ₹1,499 <span class="text-c5c6c7">/ month</span>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Gym Access
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Basic Equipment
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center justify-content-center  dmb-10 ">
+                                <div class="check-mark me-2">
+                                    <img src="assets/images/checkmark.svg" alt="" class="w-100">
+                                </div>
+                                <div class="roboto font18leading24 text-c5c6c7">
+                                    Locker Room
+                                </div>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href=""
+                                class="btnA btn-E70106 plan-btn roboto font16 leading20 text-ffffff text-decoration-none">
+                                CHOOSE PLAN
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-section dmt-100">
+
+        <div class="section-header col-lg-7 mx-auto text-center mb-5">
+            <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">WHAT OUR MEMBERS SAY</div>
+            <div class="nunito font48 leading56 text-ffffff dmb-20 fw-bold">TESTIMONIALS</div>
+        </div>
+
+        <div class="container">
+            <div class="testimonial-slider">
+                <div class="testimonial-card text-center">
+                    <div class="">
+                        <div class="nunito font40 leading40 text-c5c6c7 dmb-20">"FitZone changed my life! Lost 15kg in 4
+                            months."</div>
+                        <div class="roboto font20 leading24 text-c5c6c7 dmb-30">-Rahul Sharma</div>
+
+                    </div>
+
+                </div>
+                <div class="testimonial-card text-center">
+                    <div>
+                        <div class="nunito font40 leading40 text-c5c6c7 dmb-20">"FitZone changed my life! Lost 15kg in 4
+                            months."</div>
+                        <div class="roboto font20 leading24 text-c5c6c7">-Rahul Sharma</div>
+                    </div>
+                </div>
+                <div class="testimonial-card text-center">
+                    <div>
+                        <div class="nunito font40 leading40 text-c5c6c7 dmb-20">"FitZone changed my life! Lost 15kg in 4
+                            months."</div>
+                        <div class="roboto font20 leading24 text-c5c6c7">-Rahul Sharma</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
+
+    <footer class="footer dmt-100 dmb-100">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 contact-box mb-5 mb-lg-0">
+                    <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">READY TO START</div>
+                    <div class="nunito font48 leading56 text-ffffff dmb-20 fw-bold">YOUR FITNESS JOURNEY?</div>
+                    <div class="col-lg-7 roboto font16 leading24 text-c5c6c7 dmb-20">
+                        Book your free trial session today and take the first step
+                        towards a stronger you.
+                    </div>
+                    <a href="" class="btnA btn-E70106 text-decoration-none">BOOK FREE TRIAL</a>
+                </div>
+
+                <div class="col-lg-3 contact-box mb-5 mb-lg-0">
+                    <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">QUICK CONTACT</div>
+
+                    <div class="info dmb-15">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel: 1234567890" target="_blank"
+                            class="roboto font16 leading24 text-c5c6c7  text-decoration-none">+91
+                            1234567890</a>
+                    </div>
+
+                    <div class="info dmb-15">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@fitzone.com" target="_blank"
+                            class="roboto font16 leading24 text-c5c6c7  text-decoration-none">info@fitzone.com</a>
+                    </div>
+
+                    <div class="info">
+                        <i class="fas fa-location-dot"></i>
+                        <a href="" target="_blank" class="roboto font16 leading24 text-c5c6c7 text-decoration-none">123,
+                            Fitness Street<br>Surat, Gujarat - 395001</a>
+                    </div>
+
+                    <div class="socials">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 contact-box mb-5 mb-lg-0 form-box">
+                    <div class="roboto font20 leading24 text-E70106 text-uppercase dmb-15">SEND US A MESSAGE</div>
+
+                    <form>
+                        <div class="row row5 mb-3">
+                            <div class="col input-box">
+                                <input type="text" placeholder="Your Name"
+                                    class="w-100 roboto font16 leading24 text-c5c6c7">
+                            </div>
+                            <div class="col input-box">
+                                <input type="text" placeholder="Last Name"
+                                    class="w-100 roboto font16 leading24 text-c5c6c7">
+                            </div>
+                        </div>
+
+                        <div class="row row5 mb-3">
+                            <div class="col input-box">
+                                <input type="email" placeholder="Your Email"
+                                    class="w-100 roboto font16 leading24 text-c5c6c7">
+                            </div>
+                            <div class="col input-box">
+                                <input type="text" placeholder="Your Goal"
+                                    class="w-100 roboto font16 leading24 text-c5c6c7">
+                            </div>
+                        </div>
+                        <div class="mb-3 input-box">
+
+                            <input type="text" placeholder="Your Phone"
+                                class="w-100 roboto font16 leading24 text-c5c6c7">
+                        </div>
+                        <div class="mb-3 input-box">
+                            <textarea rows="5" placeholder="Your Message"
+                                class="w-100 roboto font16 leading24 text-c5c6c7"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btnA btn-E70106">SEND MESSAGE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

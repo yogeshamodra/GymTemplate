@@ -1,0 +1,26 @@
+footer{
+    input {
+        height: 45px;
+        padding: 10px !important;
+        border-radius: 5px;
+        overflow: hidden;
+        outline: none;
+        border: none;
+    }
+    textarea {
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 10px !important;
+    }
+    .contact-box {
+        border-right: 1px solid #c5c6c773;
+        &:last-child {
+            border-right: 0;
+        }
+        @media (max-width:992px) {
+            border-right: 0;
+        }
+    }
+}
