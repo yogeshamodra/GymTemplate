@@ -35,7 +35,7 @@ index.html
 
 ## Live Demo
 
-Will be added after deployment.
+https://yogeshamodra.github.io/GymTemplate/
 
 ## Author
 
